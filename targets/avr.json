@@ -5,8 +5,12 @@
 	"compiler": "avr-gcc",
 	"gc": "leaking",
 	"linker": "avr-gcc",
+	"cflags": [
+		"-g"
+	],
 	"ldflags": [
 		"-T", "targets/avr.ld",
 		"-Wl,--gc-sections"
-	]
+	],
+	"gdb": "avr-gdb"
 }
